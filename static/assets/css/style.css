@@ -258,7 +258,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     line-height: 1.8;
 }
 .single-about-txt p {
-    font-size: 16px;
+    font-size: 20px;
     color: black;
     padding: 35px 0 43px;
     border-bottom: 1px solid #999fb3;
@@ -451,16 +451,16 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 
 
 /* General Styles */
-/* body {
+.slider-parent {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background: linear-gradient(135deg, #667eea, #764ba2);
-    height: 100vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
-  } */
+  }
   
   /* Slider Container */
   .slider-container {
@@ -480,16 +480,17 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     height: 300px;
   }
   
-  .slider-track {
+   .slider-track {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     width: 100%;
     transition: transform 1s ease-in-out;
+
   }
   
-  .slider img {
+  .slider-track img {
     position: absolute;
     width: 200px;
     height: 300px;
@@ -504,18 +505,18 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
   /* Active and Nearby Images */
   .slider img.active {
     opacity: 1;
-    transform: scale(1) translateZ(400px);
+    transform: scale(1) translateZ(200px);
   }
   
   .slider img.prev,
   .slider img.next {
     opacity: 0.6;
-    transform: scale(0.8) translateX(-200px) translateZ(200px);
+    transform: scale(0.8) translateX(-225px) translateZ(200px);
   }
   
   .slider img.next {
     opacity: 0.6;
-    transform: scale(0.8) translateX(200px) translateZ(-200px);
+    transform: scale(0.8) translateX(225px) translateZ(200px);
   }
   
   /* Navigation Buttons */
